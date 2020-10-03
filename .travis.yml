@@ -9,5 +9,3 @@ notifications:
   email:
     recipients:
       - mohammed.bendohhou.laouini@alumnos.upm.es
-install:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
