@@ -4,7 +4,7 @@
 
 ### Estado del código
 [![Build Status](https://travis-ci.org/mbendohhoulaouini/iwvg-devops-mohammed-bendohhou.svg?branch=develop)](https://travis-ci.org/mbendohhoulaouini/iwvg-devops-mohammed-bendohhou)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=mbendohhoulaouini%3Aiwvg-devops-mohammed-bendohhou&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=mbendohhoulaouini%3Aiwvg-devops-mohammed-bendohhou)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3Amohammed-bendohhou&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=es.upm.miw%3Amohammed-bendohhou)
 [![BCH compliance](https://bettercodehub.com/edge/badge/mbendohhoulaouini/iwvg-devops-mohammed-bendohhou?branch=develop)](https://bettercodehub.com/results/iwvg-devops-mohammed-bendohhou)
 
 ### :gear: Instalación del proyecto
