@@ -5,6 +5,7 @@
 ### Estado del código
 [![Build Status](https://travis-ci.org/mbendohhoulaouini/iwvg-devops-mohammed-bendohhou.svg?branch=develop)](https://travis-ci.org/mbendohhoulaouini/iwvg-devops-mohammed-bendohhou)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=mbendohhoulaouini%3Aiwvg-devops-mohammed-bendohhou&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=mbendohhoulaouini%3Aiwvg-devops-mohammed-bendohhou)
+[![BCH compliance](https://bettercodehub.com/edge/badge/mbendohhoulaouini/iwvg-devops-mohammed-bendohhou?branch=develop)](https://bettercodehub.com/results/iwvg-devops-mohammed-bendohhou)
 
 ### :gear: Instalación del proyecto
 1. Clonar el repositorio en tu equipo, **mediante consola**:
