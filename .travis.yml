@@ -9,5 +9,7 @@ notifications:
   email:
     recipients:
       - mohammed.bendohhou.laouini@alumnos.upm.es
-before_script:
-  - chmod a+x ./mvnw
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script:
+  - mvn verify
