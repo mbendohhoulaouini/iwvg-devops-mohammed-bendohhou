@@ -6,6 +6,7 @@ branches:
     - "/^release-[0-999].[0-999]$/"
     - master
 notifications:
+  slack: miw-upm:14r71Q31vHeCLpklYhZhbsu1
   email:
     recipients:
       - mohammed.bendohhou.laouini@alumnos.upm.es
