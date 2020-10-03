@@ -9,3 +9,5 @@ notifications:
   email:
     recipients:
       - mohammed.bendohhou.laouini@alumnos.upm.es
+before_script:
+  - chmod a+x ./mvnw
