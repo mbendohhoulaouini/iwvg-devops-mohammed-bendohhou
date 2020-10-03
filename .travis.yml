@@ -18,4 +18,3 @@ deploy:
   api_key: $HEROKU
   on:
     branch: master
-  app: iwvg-devops-mohammed-bendohhou
