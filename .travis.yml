@@ -1,0 +1,13 @@
+language: java
+#jdk: openjdk14 #problems with sonar-maven-plugin
+branches:
+  only:
+    - develop
+    - "/^release-[0-999].[0-999]$/"
+    - master
+notifications:
+  email:
+    recipients:
+      - mohammed.bendohhou.laouini@alumnos.upm.es
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
