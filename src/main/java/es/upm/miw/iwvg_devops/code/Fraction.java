@@ -44,9 +44,8 @@ public class Fraction {
     }
 
     public Fraction add(Fraction fraction) {
-        int numerator = (this.numerator * fraction.getDenominator()) +
-                (fraction.getNumerator() * this.denominator);
-        Fraction resultFraction = new Fraction(numerator, this.denominator * fraction.getDenominator());
+        Fraction resultFraction = new Fraction((this.numerator * fraction.getDenominator()) +
+                (fraction.getNumerator() * this.denominator), this.denominator * fraction.getDenominator());
         resultFraction.reduce();
         return resultFraction;
     }
