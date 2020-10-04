@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FractionTest {
+class FractionTest {
 
     private Fraction fraction;
 
@@ -42,6 +42,15 @@ public class FractionTest {
     void testFractionConvertDecimalError() {
         fraction = new Fraction(1, 0);
         assertEquals(0, fraction.getDenominator() / fraction.getNumerator());
+    }
+
+    @Test
+    void testFractionModify() {
+        fraction = new Fraction();
+        assertEquals(1,fraction.decimal());
+        fraction.setNumerator(10);
+        fraction.setDenominator(5);
+        assertEquals(2,fraction.decimal());
     }
 
 }

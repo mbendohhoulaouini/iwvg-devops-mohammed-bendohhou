@@ -12,15 +12,15 @@ public class UserTest {
 
     private User user;
 
-    private List<Fraction> fractions;
+    private List<Fraction> listFractions;
 
     @BeforeEach
     void before() {
-        fractions = List.of(
+        listFractions = List.of(
                 new Fraction(2, 3),
                 new Fraction()
         );
-        user = new User("1", "Pepe", "Torres", fractions);
+        user = new User("1", "Pepe", "Torres", listFractions);
     }
 
     @Test
@@ -55,14 +55,49 @@ public class UserTest {
     @Test
     void testUserWithFractions() {
         assertNotNull(user);
-        assertEquals(2, this.fractions.size());
+        assertEquals(2, this.user.getFractions().size());
     }
 
     @Test
     void testUserWithoutFractions() {
         assertNotNull(user);
-        this.fractions = List.of();
-        assertEquals(0, this.fractions.size());
+        this.listFractions=this.user.getFractions();
+        this.listFractions=List.of();
+        assertEquals(0, this.listFractions.size());
+    }
+
+    @Test
+    void testUserAddFraction() {
+        assertNotNull(user);
+        this.user = new User();
+        this.user.addFraction(new Fraction());
+        assertEquals(1, this.user.getFractions().size());
+    }
+
+    @Test
+    void testUserModifyFractions() {
+        assertNotNull(user);
+        assertEquals(2, this.user.getFractions().size());
+        this.user.setFractions(List.of(
+                new Fraction()
+        ));
+        assertEquals(1, this.user.getFractions().size());
+    }
+
+    @Test
+    void testUserGetFraction() {
+        assertNotNull(user);
+        assertEquals(2,this.user.getFractions().size());
+        assertEquals(1, this.user.getFractions().get(1).decimal());
+    }
+
+    @Test
+    void testModifyUser() {
+        assertNotNull(user);
+        user.setName("Mohammed");
+        user.setFamilyName("Ben");
+        assertEquals("Mohammed",this.user.getName());
+        assertEquals("Ben", this.user.getFamilyName());
     }
 
 }
