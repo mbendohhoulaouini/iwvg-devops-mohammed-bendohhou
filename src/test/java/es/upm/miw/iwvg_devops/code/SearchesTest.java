@@ -38,8 +38,8 @@ class SearchesTest {
 
     @Test
     void testFindUserIdByAllProperFraction() {
-        assertEquals(List.of("7"), new Searches().findUserIdByAllProperFraction()
-                .collect(Collectors.toList()));
+        assertEquals(0, new Searches().findUserIdByAllProperFraction()
+                .collect(Collectors.toList()).size());
 
     }
 
