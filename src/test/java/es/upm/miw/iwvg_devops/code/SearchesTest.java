@@ -43,4 +43,11 @@ class SearchesTest {
 
     }
 
+    @Test
+    void testFindUserIdByAnyImproperFraction() {
+        assertEquals(List.of("1", "2", "3", "5", "6"), new Searches().findUserIdByAnyProperFraction()
+                .collect(Collectors.toList()));
+    }
+
+
 }
