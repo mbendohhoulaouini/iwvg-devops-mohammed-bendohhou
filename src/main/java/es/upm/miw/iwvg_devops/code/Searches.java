@@ -36,4 +36,12 @@ public class Searches {
                 .allMatch(Fraction::isProper))
                 .map(User::getId).distinct();
     }
+
+    public Stream<String> findUserIdByAnyProperFraction() {
+
+        return new UsersDatabase().findAll().filter(user -> user.getFractions().stream()
+                .anyMatch(Fraction::isImproper))
+                .map(User::getId).distinct();
+    }
+
 }
