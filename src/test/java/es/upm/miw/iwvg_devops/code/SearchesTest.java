@@ -49,5 +49,14 @@ class SearchesTest {
                 .collect(Collectors.toList()));
     }
 
+    @Test
+    void findDecimalFractionByNegativeSignFraction() {
+        List<Double> listFractions = new Searches().findDecimalFractionByNegativeSignFraction()
+                .collect(Collectors.toList());
+        assertEquals(3, listFractions.size());
+        assertEquals(-0.2, listFractions.get(0), 10e-1);
+        assertEquals(-0.5, listFractions.get(1), 10e-1);
+        assertEquals(-0.0, listFractions.get(1), 10e-1);
+    }
 
 }
